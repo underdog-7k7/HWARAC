@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HWARAC</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>HWARAC</h1>
+        <form action="#" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="image1">Upload Image 1:</label>
+                <input type="file" id="image1" name="image1" accept="image/*">
+                <label class="image-upload-label" for="image1">Choose File</label>
+            </div>
+            <div class="form-group">
+                <label for="image2">Upload Image 2:</label>
+                <input type="file" id="image2" name="image2" accept="image/*">
+                <label class="image-upload-label" for="image2">Choose File</label>
+            </div>
+            <div class="image-preview">
+                <h2>Image Previews:</h2>
+                <div id="preview1" class="image-preview-container">
+                    <img id="image-preview1" class="hidden" src="" alt="Image 1 Preview">
+                </div>
+                <div id="preview2" class="image-preview-container">
+                    <img id="image-preview2" class="hidden" src="" alt="Image 2 Preview">
+                </div>
+            </div>
+
+            
+            <div id="file-sizes">
+                <p>Size of Image 1: <span id="size1">N/A</span></p>
+                <p>Size of Image 2: <span id="size2">N/A</span></p>
+            </div>
+
+
+            <button type="submit" class="submit-button">Submit</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
