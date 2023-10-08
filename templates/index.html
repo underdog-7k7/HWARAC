@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Processing</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <h1>Image Processing</h1>
+    <form id="upload-form" action="/upload" method="POST" enctype="multipart/form-data">
+        <div>
+            <input type="file" id="image-upload-1" name="image1" accept="image/*" required>
+            <button type="button" id="upload-button-1">Upload Image 1</button>
+            <button type="button" id="preview-button-1">Preview Image 1</button>
+            <div class="preview" id="preview-1"></div>
+        </div>
+        <div>
+            <input type="file" id="image-upload-2" name="image2" accept="image/*" required>
+            <button type="button" id="upload-button-2">Upload Image 2</button>
+            <button type="button" id="preview-button-2">Preview Image 2</button>
+            <div class="preview" id="preview-2"></div>
+        </div>
+        <button type="submit">Process Images</button>
+    </form>
+    <div id="result"></div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
